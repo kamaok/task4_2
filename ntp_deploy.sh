@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt-get update && apt-get install ntp -y
+apt-get update > /dev/null && apt-get install ntp -y > /dev/null
 
 NTP_CONF="/etc/ntp.conf"
 CURRENT_PWD="$( cd "$(dirname "$0")" ; pwd -P )"
